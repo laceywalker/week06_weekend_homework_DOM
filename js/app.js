@@ -10,15 +10,15 @@ const handleNewItemFormSubmit = function (event) {
   event.preventDefault();
 
   const travelListItem = createTravelListItem(event.target);
-  const travelList = document.querySelector('#travel-list');
-  travelList.appendChild(travelListItem);
+  const travelDiv = document.querySelector('#travel-list');
+  travelDiv.appendChild(travelListItem);
 
   event.target.reset();
 }
 
 const createTravelListItem = function (form) {
   const travelListItem = document.createElement('ul');
-  travelListItem.classList.add('travel-list-item');
+  // travelListItem.classList.add('travel-list-item');
 
   const city = document.createElement('li');
   city.textContent = form.city.value;
@@ -27,6 +27,15 @@ const createTravelListItem = function (form) {
   const country = document.createElement('li');
   country.textContent = form.country.value;
   travelListItem.appendChild(country);
+
+  const duration = document.createElement('li');
+  duration.textContent = form.duration.value;
+  travelListItem.appendChild(duration);
+
+  const rating = document.createElement('li');
+  rating.textContent = `${form.rating.value} stars`;
+  travelListItem.appendChild(rating);
+
 
   const category = document.createElement('li');
   category.textContent = form.category.value;

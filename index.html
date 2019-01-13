@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Travel List App</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/app.js"></script>
   </head>
   <body>
@@ -17,6 +17,20 @@
         <div class="form-item">
           <label for="country" class="primary">Country</label>
           <input type="text" id="country" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="duration" class="primary">Duration</label>
+          <input type="text" id="duration" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="rating" class="primary">Rating</label>
+          <input type="radio" name="rating" value="5">5</input>
+          <input type="radio" name="rating" value="4">4</input>
+          <input type="radio" name="rating" value="3">3</input>
+          <input type="radio" name="rating" value="2">2</input>
+          <input type="radio" name="rating" value="1">1</input>
         </div>
 
         <div class="form-item">
