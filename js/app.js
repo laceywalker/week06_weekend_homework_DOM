@@ -32,8 +32,17 @@ const createTravelListItem = function (form) {
   duration.textContent = form.duration.value;
   travelListItem.appendChild(duration);
 
+  const date = document.createElement('li');
+  const dateToAdd = new Date(form.dateVisited.value);
+  // date class is inbuilt to javascript //
+  const dateDay = dateToAdd.getDate();
+  const dateMonth = dateToAdd.getMonth();
+  const dateYear = dateToAdd.getFullYear();
+  date.textContent = `${dateDay}/${dateMonth}/${dateYear}`;
+  travelListItem.appendChild(date);
+
   const rating = document.createElement('li');
-  rating.textContent = `${form.rating.value} Stars`;
+  rating.textContent = `${form.rating.value} Star`;
   travelListItem.appendChild(rating);
 
 
