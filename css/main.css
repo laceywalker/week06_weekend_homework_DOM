@@ -1,9 +1,5 @@
 body {
-  background-image: url ("/travel-balloons.jpg");
+  background-image: url ('css/balloons.jpg');
   font-family: verdana, sans-sans-serif;
   font-size: 14px;
-};
-
-#form-item {
-  padding: 20px;
 };
