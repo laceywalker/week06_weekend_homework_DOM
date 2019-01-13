@@ -2,37 +2,39 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="js/app.js"></script>
-    <title>Holiday Tracker</title>
+    <title>Travel List App</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
   </head>
   <body>
     <form id="new-item-form">
       <div id="form-wrapper">
         <div class="form-item">
-          <label for="title" class="primary">Name of City or Town:</label>
-          <input type="text" id="title" required/>
+          <label for="city" class="primary">City</label>
+          <input type="text" id="city" required/>
         </div>
 
         <div class="form-item">
-          <label for="author" class="primary">Country:</label>
-          <input type="text" id="author" required/>
+          <label for="country" class="primary">Country</label>
+          <input type="text" id="country" required/>
         </div>
 
         <div class="form-item">
-          <label for="category" class="primary">Type of Holiday</label>
+          <label for="category" class="primary">Category</label>
           <select id="category">
             <option value="" disabled selected></option>
-            <option value="Book">Leisure</option>
-            <option value="Article">Adventure</option>
-            <option value="Blog Post">Business</option>
+            <option value="Leisure">Leisure</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Business">Business</option>
           </select>
         </div>
       </div>
       <input type="submit" value="save"/>
     </form>
 
-    <h1>Holiday List</h1>
-    <div id="reading-list"></div>
+    <button id="delete-all">Delete All</button>
+
+    <h1>Trip List</h1>
+    <div id="travel-list"></div>
   </body>
 </html>
