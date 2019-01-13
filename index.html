@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/app.js"></script>
+    <title>Holiday Tracker</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="title" class="primary">Name of City or Town:</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="author" class="primary">Country:</label>
+          <input type="text" id="author" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">Type of Holiday</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Book">Leisure</option>
+            <option value="Article">Adventure</option>
+            <option value="Blog Post">Business</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>Holiday List</h1>
+    <div id="reading-list"></div>
+  </body>
+</html>
