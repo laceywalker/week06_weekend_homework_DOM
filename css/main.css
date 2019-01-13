@@ -1,0 +1,9 @@
+body {
+  background-image: url ("/travel-balloons.jpg");
+  font-family: verdana, sans-sans-serif;
+  font-size: 14px;
+};
+
+#form-wrapper {
+  padding: 20px;
+};

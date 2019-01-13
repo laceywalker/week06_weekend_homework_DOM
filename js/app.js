@@ -20,20 +20,20 @@ const createTravelListItem = function (form) {
   const travelListItem = document.createElement('ul');
   // travelListItem.classList.add('travel-list-item');
 
-  const city = document.createElement('li');
-  city.textContent = form.city.value;
-  travelListItem.appendChild(city);
+  const cityAndCountry = document.createElement('h3');
+  cityAndCountry.textContent = `${form.city.value}, ${form.country.value}`;
+  travelListItem.appendChild(cityAndCountry);
 
-  const country = document.createElement('li');
-  country.textContent = form.country.value;
-  travelListItem.appendChild(country);
+  // const country = document.createElement('h3');
+  // country.textContent = form.country.value;
+  // travelListItem.appendChild(country);
 
   const duration = document.createElement('li');
   duration.textContent = form.duration.value;
   travelListItem.appendChild(duration);
 
   const rating = document.createElement('li');
-  rating.textContent = `${form.rating.value} stars`;
+  rating.textContent = `${form.rating.value} Stars`;
   travelListItem.appendChild(rating);
 
 
